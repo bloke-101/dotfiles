@@ -1,0 +1,51 @@
+set nocompatible
+
+" General visual look of Vim
+set number
+set ruler
+set vb t_vb=
+set showmode
+set splitbelow 
+set splitright
+
+" Text searching options
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+
+" Syntax and formatting
+syntax on
+set encoding=utf-8
+set formatoptions=tcqrn1
+set hidden
+
+" Tabs and indenting
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set noshiftround
+set scrolloff=3
+
+" Command line completion options
+set showcmd
+set wildmenu
+
+" Autocomplete brackets and quotation marks
+inoremap ( ()<ESC>hli
+inoremap { {}<ESC>hli
+inoremap [ []<ESC>hli
+inoremap ' ''<ESC>hli
+inoremap " ""<ESC>hli
+inoremap ` ``<ESC>hli
+
+" Swap colon and semicolon keys to make entering command mode easier
+nnoremap ; :
+nnoremap : ;
+
+" Don't exit visual mode after indenting
+vnoremap > >gv
+vnoremap < <gv
+
